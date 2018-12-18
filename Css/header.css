@@ -1,0 +1,120 @@
+
+.navi_head{
+	height:50px;
+	background-color:#0f885c;
+	/*border-bottom: 4px solid rgba(0,87,55,0.5)*/
+}
+.navi_body{
+	overflow:hidden;
+	height:50px;
+	width: 100%;
+	background:rgba(255, 254, 241, 0.9);
+	transition:height ease 0.5s;
+	position: fixed;
+	z-index: 2;
+}
+.navi_body:hover{
+	height:300px;
+}
+
+.navi_head>div>span{
+	width: 130px;
+	text-align: center;
+	height: 300px;
+	display: inline-block;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 14px;
+	vertical-align: top;
+	cursor: pointer;
+}
+@media screen and (max-width: 960px) and (min-width: 810px){
+	.navi_head>div>span {
+		width: 110px;
+	}
+}
+@media screen and (max-width: 810px){
+	.navi_head>div>span {
+		width: 100px;
+		float: left;
+	}
+}
+
+.navi_head>div>span>div{
+	font-size: 14px;
+	margin-bottom:1em;
+	text-align: center;
+}
+
+.navi_head>div>span>div a{
+	color:#004400;
+	display: block;
+	text-decoration:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+}
+.navi_head>div>span>div a:hover{
+	color:#004400;
+	text-decoration:underline;
+}
+.navi_head>div>span>div:nth-child(1) a{
+	color: #ffffff;
+}
+.navi_title{
+	font-size:16px;
+	line-height:50px;
+	margin-top:0;
+}
+
+.navi_head>div>span:hover{
+	background:rgba(210,210,210,0.2);
+}
+
+.navi_head>div>span>div:nth-child(1):hover{
+	color: #44A17D;
+	background: rgba(255,255,255,0.9);
+	border-bottom: 1px solid rgba(0,87,55,0.9);
+}
+.navi_head>div>span>div:nth-child(1):hover a{
+	 color: #44A17D;
+ }
+
+
+
+/* 导航栏缓动隐藏效果 */
+.header-navigation {
+	position: fixed;
+	/* top: 0; */
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	z-index: 9999;
+}
+.slideUp {
+	/* -webkit-transform: translateY(-100px);
+     transform: translateY(-100px);*/
+	-webkit-transform: translateY(-100px);
+	-ms-transform: translateY(-100px);
+	-o-transform: translateY(-100px);
+	transform: translateY(-100px);
+	/*transition: transform .5s ease-out;*/
+	-webkit-transition: transform .5s ease-out;
+	-o-transition: transform .5s ease-out;
+	transition: transform .5s ease-out;
+}
+
+.slideDown {
+	/*-webkit-transform: translateY(0);
+    transform: translateY(0);*/
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	/*transition: transform .5s ease-out;*/
+	-webkit-transition: transform .5s ease-out;
+	-o-transition: transform .5s ease-out;
+	transition: transform .5s ease-out;
+}

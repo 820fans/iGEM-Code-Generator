@@ -1,0 +1,85 @@
+
+*{
+	box-sizing: border-box;
+}
+
+#my-container ul,
+#my-container li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#my-adjust-content{
+	padding: 5px;
+	margin-left: 215px;
+	border: 5px dashed #ffffff;
+	border-radius: 10px;
+}
+#adjust-padder{
+	position: relative;
+	background: #dcefbb;
+	padding: 18px 30px;
+	border-radius: 10px;
+}
+
+#my-sidebar{
+	float: left;
+	width: 200px;
+	will-change: min-height;
+}
+
+#my-sidebar .sidebar__inner{
+	padding: 10px;
+	transform: translate(0, 0);
+	transform: translate3d(0, 0, 0);
+	will-change: position, transform;
+}
+
+.side-top{
+	width: 100%;
+}
+.side-top img{
+	height: 100px;
+	width: 100px;
+}
+.site-title{
+color: #0152FC;
+font-weight: bold;
+font-size: 20px;
+border-bottom:2px dashed #3198C9;
+}
+
+/*这里必须加入#my-container ul限制,
+直接使用.page-anchors>li>ul优先级不够高*/
+.page-anchors>li{
+	position: relative;
+	border-bottom: 1px solid gray;
+}
+.page-anchors li a{
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	color: #F0FFF0;
+	padding-top: 10px;
+	font-size: 16px;
+	word-break: keep-all;
+}
+
+#my-container ul.page-anchors>li{
+	padding-bottom: 5px;
+}
+#my-container ul.page-anchors>li>ul{
+	margin-left: 15px;
+}
+#my-container ul.page-anchors>li>ul a{
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+#my-container ul.page-anchors>li>ul>li{
+	border-bottom: 1px dashed #eeeeee;
+}
+#my-container ul.page-anchors>li>ul>li:nth-last-child(1){
+	border:none;
+}

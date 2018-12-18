@@ -1,0 +1,17 @@
+
+/*清除默认样式*/
+#content{
+width: 100%;
+margin: 0;
+padding: 0;
+}
+#top_title{
+display: none;
+}
+#mw-content-text{
+margin-top: -10px;
+}
+#sideMenu{
+display: none;
+}
+/*清除默认样式 --- END*/

@@ -1,0 +1,188 @@
+#my-container {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #373737;
+    font-family: "Roboto", "Noto Sans", "Ubuntu", "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif, "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft Yahei";
+    font-size: 14px;
+    line-height: 2;
+    padding: 20px 30px 20px 20px;
+    word-wrap: break-word;
+    background: rgb(44, 62, 80);
+    color: #222222;
+    /*background: url("http://2018.igem.org/wiki/images/4/45/T--CIEI-BJ--Team--bg.jpg");*/
+}
+
+#my-container .first-level,
+#my-container .second-level,
+#my-container .third-level{
+    line-height: 2.5;
+    font-weight: bold;
+    position: relative;
+}
+#my-container .my-content{
+    line-height: 1.5;
+}
+
+#my-container .first-level{
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+#my-container .second-level{
+    font-size: 26px;
+    color: #0f885c;
+    margin: 15px 0 5px 0;
+}
+#my-container .third-level{
+    font-size: 22px;
+    margin: 10px 0 5px 0;
+}
+#my-container .forth-level{
+    font-size: 20px;
+                font-weight: bold;
+    margin: 5px 0 2px 0;
+}
+#my-container .my-content{
+    margin: 1em 0;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    text-align: justify;
+}
+#my-container .my-content.center{
+    text-align: center;
+}
+#my-container .my-content.fig-txt{
+    font-size: 16px;
+    font-weight: bold;
+}
+#my-container .second-level{
+    display: inline-block;
+}
+#my-container .second-level:after,
+#my-container .second-level::after{
+    content: "";
+    position: absolute;
+    bottom: 0.4em;
+    left: -0.4em;
+    right: -0.4em;
+    height: 0.8em;
+    opacity: 0.3;
+    background-color: #36509a;
+}
+
+/*图像*/
+#my-container .my-img{
+    max-width: 100%;
+}
+#my-container .text-center{
+    text-align: center;
+}
+
+.page-title{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    text-shadow: 5px 5px 10px #373737;
+}
+
+/*medals页面*/
+#my-container .medal-wrapper{
+border: 2px dashed green;
+border-radius: 10px;
+padding: 0 10px;
+}
+
+/*左右布局*/
+
+#my-container .content-wrapper .content-left{
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    border-right: 2px dotted #94948E;
+}
+#my-container .content-wrapper .content-right{
+    padding: 0 20px;
+    height: 300px;
+    margin-left: 50%;
+}
+#my-container .content-wrapper .content-left>.my-img{
+    width: 80%;
+}
+#my-container .content-wrapper .content-left>.my-content{
+    text-align: center;
+}
+
+#my-container .content-wrapper:after,
+#my-container .content-wrapper::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+#my-container .content-wrapper{
+    margin-top: 10px;
+    border: 0;
+    border-top: 2px dotted #94948E;
+    border-bottom: 2px dotted #94948E;
+}
+
+/*表格*/
+
+#my-container table {
+    display: block;
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    border: none;
+    background: transparent;
+    border-spacing: 0;
+    word-break: normal;
+    word-break: keep-all;
+
+}
+
+#my-container table th {
+    font-weight: bold;
+}
+
+#my-container table th,
+#my-container table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+#my-container table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+#my-container table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+/*相关链接*/
+#my-container .related-links{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#my-container .related-links .link-inform{
+    font-size: 28px;
+    font-weight: bold;
+    color: #030303;
+    padding: 10px;
+    border-top: 3px dashed #262626;
+}
+#my-container .related-links .links a{
+    color: #2468ef;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    padding: 5px 10px;
+}
